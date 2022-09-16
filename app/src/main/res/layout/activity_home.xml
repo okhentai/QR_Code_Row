@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/dh20lt"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="QR Code Row"
+        android:textAlignment="center"
+        android:textColor="#f50000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+        
+        <Button
+            android:id="@+id/generateQR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textSize="16sp"
+            android:background="@drawable/btn_bg"
+            android:textAllCaps="false"
+            android:text="Tạo mã QR"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/scanQR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textSize="16sp"
+            android:background="@drawable/btn_bg"
+            android:textAllCaps="false"
+            android:text="Quét mã QR"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:text="Made by TamRow"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:text="© 2022 DH20LT Copyright"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:text="DH20LT, inc"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
