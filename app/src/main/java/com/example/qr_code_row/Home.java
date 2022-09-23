@@ -48,7 +48,7 @@ public class Home extends AppCompatActivity {
         options.setPrompt("Made by TamRow");
         options.setBeepEnabled(true);
         options.setOrientationLocked(true);
-        options.setCaptureActivity(CaptureAct.class);
+        options.setCaptureActivity(CaptureQRCode.class);
         dh20lt.launch(options);
     }
     ActivityResultLauncher<ScanOptions> dh20lt = registerForActivityResult(new ScanContract(), result ->
@@ -58,6 +58,7 @@ public class Home extends AppCompatActivity {
             AlertDialog.Builder builder = new AlertDialog.Builder(Home.this);
             builder.setTitle("Kết quả");
             builder.setMessage(result.getContents());
+            // Nút Copy & Nút Ok
             builder.setPositiveButton("Copy", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {

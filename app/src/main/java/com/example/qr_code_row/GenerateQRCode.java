@@ -37,15 +37,15 @@ public class GenerateQRCode extends AppCompatActivity {
                 // Multi format writer
                 MultiFormatWriter writer = new MultiFormatWriter();
                 try {
-                    // Bit Matrix
+                    // Ma trận Bit
                     BitMatrix matrix = writer.encode(text, BarcodeFormat.QR_CODE, 300 ,300);
                     // Barcode encoder
                     BarcodeEncoder encoder = new BarcodeEncoder();
                     // Bitmap
                     Bitmap bitmap = encoder.createBitmap(matrix);
-                    // Set on ImageView
+                    // Đẩy mã QR lên imageView
                     imageView.setImageBitmap(bitmap);
-                    // Input manager
+                    // Input
                     InputMethodManager manager = (InputMethodManager) getSystemService(
                             Context.INPUT_METHOD_SERVICE
                     );
