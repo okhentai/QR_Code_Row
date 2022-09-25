@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="#ababab"
     tools:context=".GenerateQRCode">
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
@@ -22,7 +21,6 @@
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold" />
-
     <FrameLayout
         android:id="@+id/frame"
         android:layout_width="250dp"
@@ -39,7 +37,6 @@
             android:backgroundTint="#ffffff"
             />
     </FrameLayout>
-
     <EditText
         android:id="@+id/EdtData"
         android:layout_width="match_parent"
@@ -67,6 +64,5 @@
         android:text="Tạo mã QR"
         android:textAllCaps="false"
         android:textSize="16sp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 </RelativeLayout>

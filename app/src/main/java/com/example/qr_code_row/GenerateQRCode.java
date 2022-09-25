@@ -45,7 +45,7 @@ public class GenerateQRCode extends AppCompatActivity {
                     Bitmap bitmap = encoder.createBitmap(matrix);
                     // Đẩy mã QR lên imageView
                     imageView.setImageBitmap(bitmap);
-                    // Input
+                    // Set Input Method
                     InputMethodManager manager = (InputMethodManager) getSystemService(
                             Context.INPUT_METHOD_SERVICE
                     );

@@ -38,7 +38,6 @@
         android:layout_centerInParent="true"
         android:orientation="vertical"
         android:gravity="center">
-        
         <Button
             android:id="@+id/generateQR"
             android:layout_width="match_parent"
@@ -102,7 +101,4 @@
             android:text="DH20LT, inc"
             />
     </LinearLayout>
-
-
-
 </RelativeLayout>
